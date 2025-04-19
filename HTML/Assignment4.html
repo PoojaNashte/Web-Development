@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 4 - HTML Lists</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 30px;
+      color: #333;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    section {
+      margin: 30px auto;
+      max-width: 800px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    ul, ol {
+      margin-left: 30px;
+    }
+
+    dt {
+      font-weight: bold;
+      color: #00796b;
+    }
+
+    dd {
+      margin: 0 0 15px 20px;
+    }
+
+    .no-mark {
+      list-style-type: none;
+    }
+
+    .nested ul {
+      list-style-type: circle;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Assignment 4</h1>
+  <h2>Working with HTML Lists</h2>
+
+  <section>
+    <h3>1. Unordered List</h3>
+    <p>Shows list with black circle (default):</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <p>Shows list with circle bullets:</p>
+    <ul style="list-style-type: circle;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <p>Shows list with square bullets:</p>
+    <ul style="list-style-type: square;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <p>No bullet marks:</p>
+    <ul class="no-mark">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <p>Nested list (list inside list):</p>
+    <ul class="nested">
+      <li>Coffee</li>
+      <li>Tea
+        <ul>
+          <li>Black tea</li>
+          <li>Green tea</li>
+        </ul>
+      </li>
+      <li>Milk</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>2. Ordered List</h3>
+    <p>Numbered list:</p>
+    <ol type="1">
+      <li>Data structure</li>
+      <li>Atometa Theory</li>
+      <li>Java</li>
+    </ol>
+
+    <p>Uppercase letters:</p>
+    <ol type="A">
+      <li>Data structure</li>
+      <li>Atometa Theory</li>
+      <li>Java</li>
+    </ol>
+
+    <p>Lowercase letters:</p>
+    <ol type="a">
+      <li>Data structure</li>
+      <li>Atometa Theory</li>
+      <li>Java</li>
+    </ol>
+
+    <p>Uppercase Roman numerals:</p>
+    <ol type="I">
+      <li>Data structure</li>
+      <li>Atometa Theory</li>
+      <li>Java</li>
+    </ol>
+
+    <p>Lowercase Roman numerals:</p>
+    <ol type="i">
+      <li>Data structure</li>
+      <li>Atometa Theory</li>
+      <li>Java</li>
+    </ol>
+  </section>
+
+  <section>
+    <h3>3. Description List</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>- Used to create web page</dd>
+      <dt>CSS</dt>
+      <dd>- Used to style web page</dd>
+    </dl>
+  </section>
+
+</body>
+</html>
